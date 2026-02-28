@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react"
+import { ArrowDown, BadgeCent } from "lucide-react"
 
 
 export const HeroSection = () => {
@@ -23,9 +23,17 @@ export const HeroSection = () => {
                         An aspiring AI and Systems Engineer with experience in both 2D and 3D development.
                     </p>
 
-                    <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-4">
                         <a href="#projects" className="cosmic-button">
-                            Projects
+                            Take a Look at My Work!
+                        </a>
+
+                        <a href="" className="secondary-button">
+                            {/* THIS IS FOR A GAME LATER */}
+                            <div className="flex">
+                                COMING SOON!&nbsp;<BadgeCent />
+                            </div>
+                            
                         </a>
                     </div>
                 </div>

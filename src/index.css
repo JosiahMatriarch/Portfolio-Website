@@ -17,7 +17,7 @@ p {
   --color-primary-foreground: hsl(var(--primary-foreground));
 
   --color-card: hsl(var(--card));
-  --color-shadow: hsla(var(--shadow));
+  --color-shadow: hsl(var(--shadow));
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -89,7 +89,7 @@ p {
     --foreground: 222 47% 11%;
     
     --card: 0 0% 100%;
-    --shadow: 255 91.7% 76.3% 0.5;
+    --shadow: 255 91.7% 76.3%;
     
     --primary: 250 47% 44%;
     --primary-foreground: 250 47% 60%;
@@ -102,7 +102,7 @@ p {
     --foreground: 213 31% 91%;
     
     --card: 222 47% 8%;
-    --shadow: 39 81.5% 48.8% 0.5;
+    --shadow: 39 81.5% 48.8%;
     
     --primary: 35 81.5% 48.8%;
     --primary-foreground: 36 100% 67.5%;
@@ -147,34 +147,41 @@ p {
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 50px var(--shadow);
+        text-shadow: 0 0 50px hsl(var(--shadow));
 }
 
 @utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+  @apply transition-transform duration-300 hover:scale-[1.02] 
+        hover:shadow-[0_0_10px_hsl(var(--shadow))];
 }
 
 @utility gradient-border {
   @apply relative rounded-md; 
-  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
-  background-clip: padding-box;
-  border: 1px solid transparent;
+        background: linear-gradient(to right, hsl(var(--background)), hsl(var(--primary-foreground)));
+        background-clip: padding-box;
+        border: 1px solid transparent;
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
-        transition-all duration-300 hover:shadow-[0_0_10px_rgba(226,155,23,0.5)]
+  @apply px-6 py-2 rounded-full bg-primary text-background font-medium
+        transition-all duration-300 hover:shadow-[0_0_10px_hsl(var(--shadow))]
+        hover:scale-105 active:scale-95;
+}
+@utility secondary-button {
+  @apply px-6 py-2 rounded-full border border-primary text-primary 
+        hover:bg-primary hover:text-background transition-all 
+        duration-300 hover:shadow-[0_0_10px_hsl(var(--shadow))]
         hover:scale-105 active:scale-95;
 }
 
 @utility star {
   @apply absolute rounded-full bg-white; 
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full; 
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
 #root {
