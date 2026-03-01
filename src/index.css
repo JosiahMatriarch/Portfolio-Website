@@ -167,6 +167,12 @@ p {
         background-clip: padding-box;
         border: 1px solid transparent;
 }
+@utility gradient-border-2 {
+  @apply relative rounded-md; 
+        background: linear-gradient(to left, hsl(var(--background)), hsl(var(--border))) !important;
+        background-clip: padding-box;
+        border: 1px solid transparent;
+}
 
 @utility cosmic-button {
   @apply px-6 py-2 rounded-full bg-primary text-background font-medium
@@ -188,6 +194,12 @@ p {
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full; 
         box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+@utility timeline-glow {
+  @apply box-shadow: 0 0 40px
+        color-mix(in srgb, hsl(var(--primary)) 35%, transparent),
+        0 0 80px color-mix(in srgb, hsl(var(--primary)) 25%, transparent);
 }
 
 #root {

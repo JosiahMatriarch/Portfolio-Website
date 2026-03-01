@@ -18,6 +18,7 @@ const skills = [
     {name: "Unity", level: 85, category: "tools"},
     {name: "Unreal", level: 70, category: "tools"},
     {name: "Figma", level: 50, category: "tools"},
+    {name: "Aseprite", level: 80, category: "tools"},
     {name: "VS Code", level: 85, category: "tools"},
     {name: "GitHub", level: 90, category: "tools"},
 ];
