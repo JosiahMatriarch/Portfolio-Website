@@ -69,7 +69,7 @@ export const ExperienceSection = () => {
             <div className="container mx-auto px-8 relative">
                 <div 
                     className={cn(
-                        "timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px]",
+                        "timeline-glow absolute left-10 sm:left-0 md:left-1/2 top-0 bottom-0 w-[2px]",
                         "bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2",
                         "shadow-[0_0_10px_hsl(var(--shadow))]"
                     )} 
@@ -81,7 +81,7 @@ export const ExperienceSection = () => {
                             <div 
                                 className={cn(
                                     'absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full',
-                                    '-translate-x-1/2 ring-4 ring-background z-10'
+                                    'sm:-translate-x-1/2 ring-4 ring-background z-10'
                                 )}
                             >
                                 {exp.current && <span className='absolute inset-0 rounded-full bg-primary animate-ping opacity-75' />}
@@ -112,9 +112,9 @@ export const ExperienceSection = () => {
                                                 : ""
                                         }`}
                                     >
-                                        {exp.technologies.map((tech, key) => (
+                                        {exp.technologies.map((tech, index) => (
                                             <span 
-                                                key={key}
+                                                key={index}
                                                 className='px-3 py-1 border border-border bg-background text-xs text-primary rounded-full card-hover'
                                             >
                                                 {tech}
