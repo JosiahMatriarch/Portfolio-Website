@@ -1,5 +1,5 @@
 import { ArrowUpRight, Github } from "lucide-react";
-import marvin from "/public/marvin-martian-03.png"
+import marvin from "/marvin-martian-03.png"
 
 const projects = [
     {
