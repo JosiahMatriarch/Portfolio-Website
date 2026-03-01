@@ -197,7 +197,7 @@ p {
 }
 
 @utility timeline-glow {
-  @apply box-shadow: 0 0 40px
+        box-shadow: 0 0 40px
         color-mix(in srgb, hsl(var(--primary)) 35%, transparent),
         0 0 80px color-mix(in srgb, hsl(var(--primary)) 25%, transparent);
 }
