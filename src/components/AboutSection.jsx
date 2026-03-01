@@ -50,43 +50,51 @@ export const AboutSection = () => {
                     </div>
                     {/* Right Column */}
                     <div className="space-y-6">
-                        
-
                         <div className="grid grid-cols-1 gap-6">
                             <div className="gradient-border border border-primary p-6 card-hover">
                                 <div className="flex items-start gap-4">
-                                    <div className="p-3 rounded-full border border-background bg-primary/75">
+                                    <div className="p-3 rounded-full border border-background bg-primary">
                                         <Code2 className="h-6 w-6 text-background"/>
                                     </div>
-                                    <div className=""></div>
+                                    <div className="text-left">
+                                        <h4 className="font-semibold text-lg"> Game Development</h4>
+                                        <p>
+                                            Experienced in both Unity and Unreal game engines, I've been obsessed with art, stories, and programming for most 
+                                            of my life.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="gradient-border border border-primary p-6 card-hover">
                                 <div className="flex items-start gap-4">
-                                    <div className="p-3 rounded-full border border-background bg-primary/75">
+                                    <div className="p-3 rounded-full border border-background bg-primary">
                                         <User className="h-6 w-6 text-background"/>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="gradient-border border border-primary p-6 card-hover">
-                                <div className="flex items-start gap-4">
-                                    <div className="p-3 rounded-full border border-background bg-primary/75">
-                                        <Briefcase className="h-6 w-6 text-background"/>
+                                    <div className="text-left">
+                                        <h4 className="font-semibold text-lg"> Game Development</h4>
+                                        <p>
+                                            Experienced in both Unity and Unreal game engines, I've been obsessed with art, stories, and programming for most 
+                                            of my life.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div className="gradient-border border border-primary p-6 card-hover">
                                 <div className="flex items-start gap-4">
-                                    <div className="p-3 rounded-full border border-background bg-primary/75">
-                                        <Code2 className="h-6 w-6 text-background"/>
+                                    <div className="p-3 rounded-full border border-background bg-primary">
+                                        <Briefcase className="h-6 w-6 text-background"/>
+                                    </div>
+                                    <div className="text-left">
+                                        <h4 className="font-semibold text-lg"> Project Management</h4>
+                                        <p>
+                                            Leading and working with smaller teams, managing goals and deadlines, and directing production using agile methodologies.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-
             </div>
         </section>
     )

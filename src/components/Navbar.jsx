@@ -3,10 +3,12 @@ import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const navItems = [
-    {name: 'Home', href: "#hero"},
+    {name: 'Home', href: "#home"},
     {name: 'About', href: "#about"},
     {name: 'Skills', href: "#skills"},
-    {name: 'Project', href: "#projects"},
+    {name: 'Experience', href: "#experience"},
+    {name: 'Projects', href: "#projects"},
+    {name: 'Involvement', href: "#involvement"},
     {name: 'Contact', href: "#contact"},
 ];
 
@@ -31,59 +33,54 @@ export const Navbar = () => {
                 isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
             )}
         >
-
-            <div className="container flex items-center justify-between">
-                <a 
-                    className="text-xl font-bold text-primary flex items-center"
-                    href='#hero'
-                >
-                    <span className="relative z-10">
-                        <span className="text-glow text-foreground"> Mikey's </span>{""} 
-                        Portfolio
-                    </span>
-                </a>
-
-                {/* desktop nav */}
-                <div className='hidden md:flex space-x-8'>
-                    {navItems.map((item, key) => (
-                        <a key={key} href={item.href} className='text-foreground/80 hover:text-primary transition-colors duration-300'>
-                            {item.name}
-                        </a>
-                    ))}
-                </div>
-
-                {/* mobile nav */}
-
-                <button 
-                    onClick={() => setIsMenuOpen((prev) => !prev)}
-                    className='md:hidden p-2 text-foreground z-50'
-                    aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-                > 
-                    {isMenuOpen ? <X size={24} /> : <Menu size={24} /> } 
-                </button>
-
-                <div 
-                    className={cn(
-                        "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
-                        "transition-all duration-300 md:hidden",
-                        isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-                    )}
-                >
-                   <div className='flex flex-col space-y-8 text-xl'>
+            <div className="bg-primary rounded-full p-3 w-fit mx-auto">
+                <div className="container flex items-center justify-between">
+                    <a 
+                        className="text-xl font-bold text-background flex items-center"
+                        href='#home'
+                    >
+                        <span className="relative z-10">
+                            <span className="text-glow text-foreground"> Mikey's </span>{""} 
+                            Portfolio
+                        </span>
+                    </a>
+                    {/* desktop nav */}
+                    <div className='ml-8 hidden lg:flex space-x-8'>
                         {navItems.map((item, key) => (
-                            <a 
-                                key={key} 
-                                href={item.href} 
-                                className='text-foreground/80 hover:text-primary hover:text-glow transition-colors duration-300'
-                                onClick={() => setIsMenuOpen(false)}
-                            >
+                            <a key={key} href={item.href} className='text-foreground/80 hover:text-background hover:underline transition-colors duration-300'>
                                 {item.name}
                             </a>
                         ))}
-                    </div> 
+                    </div>
+                    {/* mobile nav */}
+                    <button 
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                        className='ml-8 lg:hidden p-2 text-foreground z-50'
+                        aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+                    > 
+                        {isMenuOpen ? <X size={24} /> : <Menu size={24} /> } 
+                    </button>
+                    <div 
+                        className={cn(
+                            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+                            "transition-all duration-300 md:hidden",
+                            isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                        )}
+                    >
+                    <div className='flex flex-col space-y-8 text-xl'>
+                            {navItems.map((item, key) => (
+                                <a 
+                                    key={key} 
+                                    href={item.href} 
+                                    className='text-foreground/80 hover:text-primary hover:text-glow transition-colors duration-300'
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    {item.name}
+                                </a>
+                            ))}
+                        </div> 
+                    </div>
                 </div>
-                
-
             </div>
         </nav>
     );
