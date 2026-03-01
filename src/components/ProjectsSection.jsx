@@ -1,11 +1,12 @@
 import { ArrowUpRight, Github } from "lucide-react";
+import marvin from "/public/marvin-martian-03.png"
 
 const projects = [
     {
         id: 1,
         title: "Group 12",
         description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
-        image: "/marvin-martian-03.png",
+        image: marvin,
         tags: ["Unity", "C#"],
         link: "#",
         github: "#",
@@ -14,7 +15,7 @@ const projects = [
         id: 2,
         title: "Group 12",
         description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
-        image: "/marvin-martian-03.png",
+        image: marvin,
         tags: ["Unity", "C#"],
         link: "#",
         github: "#",
@@ -23,7 +24,7 @@ const projects = [
         id: 3,
         title: "Group 12",
         description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
-        image: "/marvin-martian-03.png",
+        image: marvin,
         tags: ["Unity", "C#"],
         link: "#",
         github: "#",
@@ -32,7 +33,7 @@ const projects = [
         id: 4,
         title: "Group 12",
         description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
-        image: "/marvin-martian-03.png",
+        image: marvin,
         tags: ["Unity", "C#"],
         link: "#",
         github: "#",
@@ -41,7 +42,7 @@ const projects = [
         id: 5,
         title: "Group 12",
         description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
-        image: "/marvin-martian-03.png",
+        image: marvin,
         tags: ["Unity", "C#"],
         link: "#",
         github: "#",

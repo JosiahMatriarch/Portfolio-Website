@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 const skills = [
     {name: "C#", level: 90, category: "base"},
