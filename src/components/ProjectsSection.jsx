@@ -13,10 +13,10 @@ const projects = [
     },
     {
         id: 2,
-        title: "Group 12",
-        description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
+        title: "Zombie Survivalist",
+        description:"Trapped in a house with an ancient curse, fend yourself against the horde of zombies!",
         image: marvin,
-        tags: ["Unity", "C#"],
+        tags: ["Unreal", "C++"],
         link: "#",
         github: "#",
     },
