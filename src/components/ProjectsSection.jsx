@@ -4,10 +4,10 @@ import marvin from "/marvin-martian-03.png"
 const projects = [
     {
         id: 1,
-        title: "Group 12",
-        description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
+        title: "Roll Call",
+        description:"A Pathfinder2E game manager with everything included to play the game remotely, including interactive maps, an easy to use hombrew content system and more! IN PROGRESS",
         image: marvin,
-        tags: ["Unity", "C#"],
+        tags: ["ASP.NET", "C#", "React"],
         link: "#",
         github: "#",
     },
@@ -31,8 +31,8 @@ const projects = [
     },
     {
         id: 4,
-        title: "Group 12",
-        description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
+        title: "Mama Roux",
+        description:"You've heard tell of a mysterious woman deep in the Louisiana bayou, able to make the most delicious gumbo if she only had the ingredients. Collect them all and find Mama Roux for a most delicious reward!",
         image: marvin,
         tags: ["Unity", "C#"],
         link: "#",
@@ -40,13 +40,14 @@ const projects = [
     },
     {
         id: 5,
-        title: "Group 12",
-        description:"You are part of the 12th group of test subjects in a hyperbolic time chamber, put there to study lovecraftian beings. Unfortunately, you got stuck in a time loop and must fight your way out!",
+        title: "TSPMO",
+        description:"You work in the Suspicious Paperwork and Mystery Office, and it's your job to audit people on their taxes! compare tax documents, income forms, and SSNs to verify their authenticity!",
         image: marvin,
         tags: ["Unity", "C#"],
         link: "#",
         github: "#",
     },
+    
 ]
 
 export const ProjectSection = () => {
